@@ -1,0 +1,1 @@
+mongodb+srv://averouse:YOUR_ACTUAL_PASSWORD@trashedcluster.izsn7ac.mongodb.net/?appName=TrashedCluster
