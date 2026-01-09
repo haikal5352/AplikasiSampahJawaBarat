@@ -217,5 +217,45 @@ namespace AplikasiSampahJabar
             rtbChatArea.AppendText("Bot: " + jawaban + "\n\n");
             txtChatInput.Clear();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtJenis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtKabupaten_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtVolume_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

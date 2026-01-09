@@ -230,6 +230,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -244,6 +245,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons8-pdf-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons8-mail-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons8-deleted-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons8-save-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\PDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\DELETED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\SAVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons8-weight-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons8-trash-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons8-location-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
