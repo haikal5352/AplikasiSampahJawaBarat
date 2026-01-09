@@ -63,6 +63,16 @@ namespace AplikasiSampahJabar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _11189432 {
+            get {
+                object obj = ResourceManager.GetObject("11189432", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DELETED {
             get {
                 object obj = ResourceManager.GetObject("DELETED", resourceCulture);

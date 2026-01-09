@@ -121,8 +121,11 @@
   <data name="icons8-save-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\icons8-save-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-deleted-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-deleted-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-trash-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\icons8-trash-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\PDF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-pdf-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\icons8-pdf-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,22 +136,22 @@
   <data name="DELETED" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\DELETED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\PDF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SAVE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\SAVE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-weight-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\icons8-weight-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-mail-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\icons8-mail-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-weight-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-weight-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-trash-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-trash-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SAVE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\SAVE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-location-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\icons8-location-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-deleted-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\icons8-deleted-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11189432" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11189432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

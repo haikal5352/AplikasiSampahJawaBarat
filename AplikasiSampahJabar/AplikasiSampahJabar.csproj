@@ -211,6 +211,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="ErrorHandler.cs" />
+    <Compile Include="InputValidator.cs" />
+    <Compile Include="PerformanceManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +282,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\icons8-location-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11189432.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
