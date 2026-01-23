@@ -41,23 +41,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnExportPDF = new System.Windows.Forms.Button();
-            this.btnKirimChat = new System.Windows.Forms.Button();
-            this.btnHapus = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.lblPageInfo = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnSimpan = new System.Windows.Forms.Button();
+            this.btnExportPDF = new System.Windows.Forms.Button();
+            this.btnKirimChat = new System.Windows.Forms.Button();
+            this.btnHapus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,7 +88,7 @@
             this.label1.Location = new System.Drawing.Point(234, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 19);
+            this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kabupaten/Kota";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -101,7 +101,7 @@
             this.label2.Location = new System.Drawing.Point(463, 32);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 19);
+            this.label2.Size = new System.Drawing.Size(97, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Jenis Sampah";
             // 
@@ -113,7 +113,7 @@
             this.label3.Location = new System.Drawing.Point(714, 32);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 19);
+            this.label3.Size = new System.Drawing.Size(92, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Volume (Ton)";
             // 
@@ -126,7 +126,7 @@
             this.txtKabupaten.Location = new System.Drawing.Point(237, 50);
             this.txtKabupaten.Margin = new System.Windows.Forms.Padding(2);
             this.txtKabupaten.Name = "txtKabupaten";
-            this.txtKabupaten.Size = new System.Drawing.Size(140, 23);
+            this.txtKabupaten.Size = new System.Drawing.Size(140, 19);
             this.txtKabupaten.TabIndex = 4;
             // 
             // txtJenis
@@ -138,7 +138,7 @@
             this.txtJenis.Location = new System.Drawing.Point(470, 50);
             this.txtJenis.Margin = new System.Windows.Forms.Padding(2);
             this.txtJenis.Name = "txtJenis";
-            this.txtJenis.Size = new System.Drawing.Size(140, 23);
+            this.txtJenis.Size = new System.Drawing.Size(140, 19);
             this.txtJenis.TabIndex = 5;
             // 
             // txtVolume
@@ -150,7 +150,7 @@
             this.txtVolume.Location = new System.Drawing.Point(717, 51);
             this.txtVolume.Margin = new System.Windows.Forms.Padding(2);
             this.txtVolume.Name = "txtVolume";
-            this.txtVolume.Size = new System.Drawing.Size(140, 23);
+            this.txtVolume.Size = new System.Drawing.Size(140, 19);
             this.txtVolume.TabIndex = 6;
             // 
             // rtbChatArea
@@ -171,7 +171,7 @@
             this.txtChatInput.Location = new System.Drawing.Point(30, 58);
             this.txtChatInput.Margin = new System.Windows.Forms.Padding(2);
             this.txtChatInput.Name = "txtChatInput";
-            this.txtChatInput.Size = new System.Drawing.Size(534, 27);
+            this.txtChatInput.Size = new System.Drawing.Size(534, 23);
             this.txtChatInput.TabIndex = 12;
             // 
             // panel1
@@ -199,13 +199,132 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.ForestGreen;
             this.label4.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(33, 18);
+            this.label4.Location = new System.Drawing.Point(25, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 121);
+            this.label4.Size = new System.Drawing.Size(97, 101);
             this.label4.TabIndex = 15;
             this.label4.Text = "S";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txtChatInput);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(153, 588);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(725, 106);
+            this.panel2.TabIndex = 14;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(713, 76);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(145, 3);
+            this.panel8.TabIndex = 18;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(467, 75);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(145, 3);
+            this.panel7.TabIndex = 18;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(234, 75);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(145, 3);
+            this.panel6.TabIndex = 17;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel4.Location = new System.Drawing.Point(156, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 699);
+            this.panel4.TabIndex = 15;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Location = new System.Drawing.Point(183, 416);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
+            this.btnPrevious.TabIndex = 17;
+            this.btnPrevious.Text = "< Previous";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(390, 416);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.TabIndex = 18;
+            this.btnNext.Text = "Next >";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // lblPageInfo
+            // 
+            this.lblPageInfo.AutoSize = true;
+            this.lblPageInfo.ForeColor = System.Drawing.Color.White;
+            this.lblPageInfo.Location = new System.Drawing.Point(264, 418);
+            this.lblPageInfo.Name = "lblPageInfo";
+            this.lblPageInfo.Size = new System.Drawing.Size(81, 17);
+            this.lblPageInfo.TabIndex = 19;
+            this.lblPageInfo.Text = "Page 1 of 1";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(791, 416);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 20;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_weight_50;
+            this.pictureBox3.Location = new System.Drawing.Point(661, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_trash_48;
+            this.pictureBox2.Location = new System.Drawing.Point(417, 32);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_location_50;
+            this.pictureBox1.Location = new System.Drawing.Point(184, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::AplikasiSampahJabar.Properties.Resources._11189432;
+            this.pictureBox4.Location = new System.Drawing.Point(718, 481);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(161, 192);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // btnSimpan
             // 
@@ -279,127 +398,9 @@
             this.btnHapus.UseVisualStyleBackColor = true;
             this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.txtChatInput);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(153, 588);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(725, 106);
-            this.panel2.TabIndex = 14;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_weight_50;
-            this.pictureBox3.Location = new System.Drawing.Point(661, 32);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 59);
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_trash_48;
-            this.pictureBox2.Location = new System.Drawing.Point(417, 32);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 59);
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_location_50;
-            this.pictureBox1.Location = new System.Drawing.Point(184, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 59);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(713, 76);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(145, 3);
-            this.panel8.TabIndex = 18;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(467, 75);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(145, 3);
-            this.panel7.TabIndex = 18;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(234, 75);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(145, 3);
-            this.panel6.TabIndex = 17;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel4.Location = new System.Drawing.Point(156, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 699);
-            this.panel4.TabIndex = 15;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::AplikasiSampahJabar.Properties.Resources._11189432;
-            this.pictureBox4.Location = new System.Drawing.Point(718, 481);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(161, 192);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Location = new System.Drawing.Point(183, 416);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
-            this.btnPrevious.TabIndex = 17;
-            this.btnPrevious.Text = "< Previous";
-            this.btnPrevious.UseVisualStyleBackColor = true;
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
-            // 
-            // btnNext
-            // 
-            this.btnNext.Location = new System.Drawing.Point(390, 416);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
-            this.btnNext.TabIndex = 18;
-            this.btnNext.Text = "Next >";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // lblPageInfo
-            // 
-            this.lblPageInfo.AutoSize = true;
-            this.lblPageInfo.ForeColor = System.Drawing.Color.White;
-            this.lblPageInfo.Location = new System.Drawing.Point(264, 418);
-            this.lblPageInfo.Name = "lblPageInfo";
-            this.lblPageInfo.Size = new System.Drawing.Size(96, 21);
-            this.lblPageInfo.TabIndex = 19;
-            this.lblPageInfo.Text = "Page 1 of 1";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(791, 416);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 20;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(878, 694);
