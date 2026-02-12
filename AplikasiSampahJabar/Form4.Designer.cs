@@ -53,6 +53,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Virus = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -291,12 +292,26 @@
             this.panel3.Size = new System.Drawing.Size(100, 15);
             this.panel3.TabIndex = 18;
             // 
+            // Virus
+            // 
+            this.Virus.FlatAppearance.BorderSize = 0;
+            this.Virus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Virus.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Virus.ForeColor = System.Drawing.Color.Crimson;
+            this.Virus.Location = new System.Drawing.Point(316, 606);
+            this.Virus.Name = "Virus";
+            this.Virus.Size = new System.Drawing.Size(191, 55);
+            this.Virus.TabIndex = 34;
+            this.Virus.Text = "StackSampah";
+            this.Virus.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(782, 653);
+            this.Controls.Add(this.Virus);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
@@ -349,5 +364,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button Virus;
     }
 }

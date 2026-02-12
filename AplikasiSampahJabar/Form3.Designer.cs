@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnregis = new System.Windows.Forms.Button();
@@ -54,7 +55,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Virus = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +76,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 521);
             this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(106, 464);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 44);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Register Petugas";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -309,19 +324,18 @@
             this.panel6.Size = new System.Drawing.Size(200, 16);
             this.panel6.TabIndex = 25;
             // 
-            // button1
+            // Virus
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(106, 464);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Register Petugas";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Virus.FlatAppearance.BorderSize = 0;
+            this.Virus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Virus.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Virus.ForeColor = System.Drawing.Color.ForestGreen;
+            this.Virus.Location = new System.Drawing.Point(316, 639);
+            this.Virus.Name = "Virus";
+            this.Virus.Size = new System.Drawing.Size(191, 55);
+            this.Virus.TabIndex = 29;
+            this.Virus.Text = "StackSampah";
+            this.Virus.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
@@ -329,6 +343,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(782, 694);
+            this.Controls.Add(this.Virus);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel7);
@@ -384,5 +399,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Virus;
     }
 }
