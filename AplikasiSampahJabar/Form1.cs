@@ -528,5 +528,10 @@ namespace AplikasiSampahJabar
                 ErrorHandler.ShowError("Gagal me-refresh data: " + ex.Message);
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            c
+        }
     }
 }

@@ -54,6 +54,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtKabupaten = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Virus = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,6 +190,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.btnregis);
@@ -238,13 +241,13 @@
             this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.btnlogin.FlatAppearance.BorderSize = 0;
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(130, 390);
+            this.btnlogin.Location = new System.Drawing.Point(42, 390);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(154, 41);
             this.btnlogin.TabIndex = 21;
-            this.btnlogin.Text = "Login";
+            this.btnlogin.Text = "Login User";
             this.btnlogin.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -307,12 +310,40 @@
             this.txtKabupaten.Size = new System.Drawing.Size(330, 37);
             this.txtKabupaten.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(218, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(154, 41);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Login Petugas";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // Virus
+            // 
+            this.Virus.FlatAppearance.BorderSize = 0;
+            this.Virus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Virus.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Virus.ForeColor = System.Drawing.Color.ForestGreen;
+            this.Virus.Location = new System.Drawing.Point(326, 597);
+            this.Virus.Name = "Virus";
+            this.Virus.Size = new System.Drawing.Size(191, 55);
+            this.Virus.TabIndex = 17;
+            this.Virus.Text = "StackSampah";
+            this.Virus.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(782, 653);
+            this.Controls.Add(this.Virus);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
@@ -368,5 +399,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtKabupaten;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Virus;
     }
 }

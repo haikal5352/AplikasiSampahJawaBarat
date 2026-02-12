@@ -70,7 +70,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(184, 138);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
@@ -155,7 +155,7 @@
             // 
             // rtbChatArea
             // 
-            this.rtbChatArea.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.rtbChatArea.BackColor = System.Drawing.SystemColors.ControlLight;
             this.rtbChatArea.ForeColor = System.Drawing.SystemColors.Window;
             this.rtbChatArea.Location = new System.Drawing.Point(183, 481);
             this.rtbChatArea.Margin = new System.Windows.Forms.Padding(2);
@@ -166,7 +166,7 @@
             // 
             // txtChatInput
             // 
-            this.txtChatInput.BackColor = System.Drawing.SystemColors.GrayText;
+            this.txtChatInput.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtChatInput.ForeColor = System.Drawing.SystemColors.Window;
             this.txtChatInput.Location = new System.Drawing.Point(30, 58);
             this.txtChatInput.Margin = new System.Windows.Forms.Padding(2);
@@ -432,6 +432,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "SampahJabar";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
