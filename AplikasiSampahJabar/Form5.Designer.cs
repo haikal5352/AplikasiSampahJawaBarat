@@ -36,6 +36,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.lblPageInfo = new System.Windows.Forms.Label();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -44,10 +48,6 @@
             this.btnExportPDF = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.lblPageInfo = new System.Windows.Forms.Label();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Crimson;
+            this.panel4.BackColor = System.Drawing.Color.ForestGreen;
             this.panel4.Location = new System.Drawing.Point(159, 126);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 580);
@@ -77,7 +77,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Crimson;
+            this.panel3.BackColor = System.Drawing.Color.ForestGreen;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
@@ -87,7 +87,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Crimson;
+            this.label4.BackColor = System.Drawing.Color.ForestGreen;
             this.label4.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(25, 9);
@@ -110,7 +110,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Crimson;
+            this.panel5.BackColor = System.Drawing.Color.ForestGreen;
             this.panel5.Location = new System.Drawing.Point(159, 126);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(720, 10);
@@ -128,6 +128,43 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(682, 480);
             this.dataGridView1.TabIndex = 21;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(793, 640);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 25;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            // 
+            // lblPageInfo
+            // 
+            this.lblPageInfo.AutoSize = true;
+            this.lblPageInfo.ForeColor = System.Drawing.Color.White;
+            this.lblPageInfo.Location = new System.Drawing.Point(266, 642);
+            this.lblPageInfo.Name = "lblPageInfo";
+            this.lblPageInfo.Size = new System.Drawing.Size(74, 16);
+            this.lblPageInfo.TabIndex = 24;
+            this.lblPageInfo.Text = "Page 1 of 1";
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(392, 640);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.TabIndex = 23;
+            this.btnNext.Text = "Next >";
+            this.btnNext.UseVisualStyleBackColor = true;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Location = new System.Drawing.Point(185, 640);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
+            this.btnPrevious.TabIndex = 22;
+            this.btnPrevious.Text = "< Previous";
+            this.btnPrevious.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -265,43 +302,6 @@
             this.button2.Text = "Detail Sampah";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(793, 640);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 25;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // lblPageInfo
-            // 
-            this.lblPageInfo.AutoSize = true;
-            this.lblPageInfo.ForeColor = System.Drawing.Color.White;
-            this.lblPageInfo.Location = new System.Drawing.Point(266, 642);
-            this.lblPageInfo.Name = "lblPageInfo";
-            this.lblPageInfo.Size = new System.Drawing.Size(74, 16);
-            this.lblPageInfo.TabIndex = 24;
-            this.lblPageInfo.Text = "Page 1 of 1";
-            // 
-            // btnNext
-            // 
-            this.btnNext.Location = new System.Drawing.Point(392, 640);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
-            this.btnNext.TabIndex = 23;
-            this.btnNext.Text = "Next >";
-            this.btnNext.UseVisualStyleBackColor = true;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Location = new System.Drawing.Point(185, 640);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
-            this.btnPrevious.TabIndex = 22;
-            this.btnPrevious.Text = "< Previous";
-            this.btnPrevious.UseVisualStyleBackColor = true;
             // 
             // Form5
             // 
