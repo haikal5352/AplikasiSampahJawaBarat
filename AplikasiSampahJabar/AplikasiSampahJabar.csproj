@@ -235,6 +235,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="DatabaseHelper.cs" />
     <Compile Include="ExportHelper.cs" />
+    <Compile Include="MistralAIHelper.cs" />
     <Compile Include="SampahHelper.cs" />
     <Compile Include="SampahModel.cs" />
     <Compile Include="ErrorHandler.cs" />

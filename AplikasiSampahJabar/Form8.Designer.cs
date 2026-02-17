@@ -48,9 +48,10 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(800, 605);
+            this.btnRefresh.Location = new System.Drawing.Point(900, 756);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(84, 29);
             this.btnRefresh.TabIndex = 40;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -59,26 +60,28 @@
             // 
             this.lblPageInfo.AutoSize = true;
             this.lblPageInfo.ForeColor = System.Drawing.Color.White;
-            this.lblPageInfo.Location = new System.Drawing.Point(284, 608);
+            this.lblPageInfo.Location = new System.Drawing.Point(320, 760);
             this.lblPageInfo.Name = "lblPageInfo";
-            this.lblPageInfo.Size = new System.Drawing.Size(74, 16);
+            this.lblPageInfo.Size = new System.Drawing.Size(90, 20);
             this.lblPageInfo.TabIndex = 39;
             this.lblPageInfo.Text = "Page 1 of 1";
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(399, 605);
+            this.btnNext.Location = new System.Drawing.Point(449, 756);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.Size = new System.Drawing.Size(84, 29);
             this.btnNext.TabIndex = 38;
             this.btnNext.Text = "Next >";
             this.btnNext.UseVisualStyleBackColor = true;
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(192, 605);
+            this.btnPrevious.Location = new System.Drawing.Point(216, 756);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
+            this.btnPrevious.Size = new System.Drawing.Size(84, 29);
             this.btnPrevious.TabIndex = 34;
             this.btnPrevious.Text = "< Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
@@ -86,9 +89,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel4.Location = new System.Drawing.Point(160, -2);
+            this.panel4.Location = new System.Drawing.Point(180, -2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 699);
+            this.panel4.Size = new System.Drawing.Size(11, 874);
             this.panel4.TabIndex = 30;
             // 
             // dataGridView1
@@ -96,12 +100,12 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(180, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(202, 31);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(687, 561);
+            this.dataGridView1.Size = new System.Drawing.Size(773, 701);
             this.dataGridView1.TabIndex = 25;
             // 
             // panel1
@@ -112,8 +116,9 @@
             this.panel1.Controls.Add(this.btnHapus);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(153, 694);
+            this.panel1.Size = new System.Drawing.Size(172, 868);
             this.panel1.TabIndex = 29;
             // 
             // button4
@@ -124,10 +129,10 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(3, 540);
+            this.button4.Location = new System.Drawing.Point(3, 675);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 90);
+            this.button4.Size = new System.Drawing.Size(169, 112);
             this.button4.TabIndex = 23;
             this.button4.Text = "Keluar";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -138,8 +143,9 @@
             this.panel3.BackColor = System.Drawing.Color.ForestGreen;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(165, 120);
+            this.panel3.Size = new System.Drawing.Size(186, 150);
             this.panel3.TabIndex = 15;
             // 
             // label4
@@ -148,9 +154,9 @@
             this.label4.BackColor = System.Drawing.Color.ForestGreen;
             this.label4.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(25, 9);
+            this.label4.Location = new System.Drawing.Point(28, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 101);
+            this.label4.Size = new System.Drawing.Size(117, 121);
             this.label4.TabIndex = 15;
             this.label4.Text = "S";
             // 
@@ -162,10 +168,10 @@
             this.btnExportPDF.ForeColor = System.Drawing.Color.White;
             this.btnExportPDF.Image = global::AplikasiSampahJabar.Properties.Resources.PDF;
             this.btnExportPDF.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExportPDF.Location = new System.Drawing.Point(2, 425);
+            this.btnExportPDF.Location = new System.Drawing.Point(2, 531);
             this.btnExportPDF.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportPDF.Name = "btnExportPDF";
-            this.btnExportPDF.Size = new System.Drawing.Size(150, 80);
+            this.btnExportPDF.Size = new System.Drawing.Size(169, 100);
             this.btnExportPDF.TabIndex = 9;
             this.btnExportPDF.Text = "Export ke PDF";
             this.btnExportPDF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -179,10 +185,10 @@
             this.btnHapus.ForeColor = System.Drawing.Color.White;
             this.btnHapus.Image = global::AplikasiSampahJabar.Properties.Resources.DELETED;
             this.btnHapus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnHapus.Location = new System.Drawing.Point(2, 300);
+            this.btnHapus.Location = new System.Drawing.Point(2, 375);
             this.btnHapus.Margin = new System.Windows.Forms.Padding(2);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(150, 80);
+            this.btnHapus.Size = new System.Drawing.Size(169, 100);
             this.btnHapus.TabIndex = 8;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -190,10 +196,10 @@
             // 
             // Form8
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(878, 694);
+            this.ClientSize = new System.Drawing.Size(988, 868);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblPageInfo);
             this.Controls.Add(this.btnNext);
@@ -201,8 +207,10 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form8";
-            this.Text = "Form8";
+            this.Text = "Kelola User";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

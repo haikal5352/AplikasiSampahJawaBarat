@@ -78,9 +78,10 @@
             this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.comboBox2.ForeColor = System.Drawing.Color.White;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(431, -75);
+            this.comboBox2.Location = new System.Drawing.Point(485, -94);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(146, 26);
+            this.comboBox2.Size = new System.Drawing.Size(164, 30);
             this.comboBox2.TabIndex = 40;
             // 
             // comboBox1
@@ -90,9 +91,10 @@
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(199, -74);
+            this.comboBox1.Location = new System.Drawing.Point(224, -92);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(145, 26);
+            this.comboBox1.Size = new System.Drawing.Size(163, 30);
             this.comboBox1.TabIndex = 39;
             // 
             // numericUpDown1
@@ -101,40 +103,45 @@
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numericUpDown1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.numericUpDown1.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(680, -71);
+            this.numericUpDown1.Location = new System.Drawing.Point(765, -89);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(143, 22);
+            this.numericUpDown1.Size = new System.Drawing.Size(161, 26);
             this.numericUpDown1.TabIndex = 38;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(678, -48);
+            this.panel8.Location = new System.Drawing.Point(763, -60);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(145, 3);
+            this.panel8.Size = new System.Drawing.Size(163, 4);
             this.panel8.TabIndex = 34;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(432, -49);
+            this.panel7.Location = new System.Drawing.Point(486, -61);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(145, 3);
+            this.panel7.Size = new System.Drawing.Size(163, 4);
             this.panel7.TabIndex = 35;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(199, -49);
+            this.panel6.Location = new System.Drawing.Point(224, -61);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(145, 3);
+            this.panel6.Size = new System.Drawing.Size(163, 4);
             this.panel6.TabIndex = 29;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(792, 659);
+            this.btnRefresh.Location = new System.Drawing.Point(891, 824);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(84, 29);
             this.btnRefresh.TabIndex = 53;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -143,26 +150,28 @@
             // 
             this.lblPageInfo.AutoSize = true;
             this.lblPageInfo.ForeColor = System.Drawing.Color.White;
-            this.lblPageInfo.Location = new System.Drawing.Point(276, 662);
+            this.lblPageInfo.Location = new System.Drawing.Point(310, 828);
             this.lblPageInfo.Name = "lblPageInfo";
-            this.lblPageInfo.Size = new System.Drawing.Size(74, 16);
+            this.lblPageInfo.Size = new System.Drawing.Size(90, 20);
             this.lblPageInfo.TabIndex = 52;
             this.lblPageInfo.Text = "Page 1 of 1";
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(391, 659);
+            this.btnNext.Location = new System.Drawing.Point(440, 824);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.Size = new System.Drawing.Size(84, 29);
             this.btnNext.TabIndex = 49;
             this.btnNext.Text = "Next >";
             this.btnNext.UseVisualStyleBackColor = true;
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(184, 659);
+            this.btnPrevious.Location = new System.Drawing.Point(207, 824);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
+            this.btnPrevious.Size = new System.Drawing.Size(84, 29);
             this.btnPrevious.TabIndex = 46;
             this.btnPrevious.Text = "< Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
@@ -170,21 +179,22 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel4.Location = new System.Drawing.Point(160, -2);
+            this.panel4.Location = new System.Drawing.Point(180, -2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 699);
+            this.panel4.Size = new System.Drawing.Size(11, 874);
             this.panel4.TabIndex = 43;
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(184, 228);
+            this.dataGridView1.Location = new System.Drawing.Point(207, 285);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(687, 426);
+            this.dataGridView1.Size = new System.Drawing.Size(773, 532);
             this.dataGridView1.TabIndex = 41;
             // 
             // panel5
@@ -194,8 +204,9 @@
             this.panel5.Controls.Add(this.btnSimpan);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(153, 694);
+            this.panel5.Size = new System.Drawing.Size(172, 868);
             this.panel5.TabIndex = 42;
             // 
             // button4
@@ -206,10 +217,10 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(3, 540);
+            this.button4.Location = new System.Drawing.Point(3, 675);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 90);
+            this.button4.Size = new System.Drawing.Size(169, 112);
             this.button4.TabIndex = 23;
             this.button4.Text = "Keluar";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -220,8 +231,9 @@
             this.panel9.BackColor = System.Drawing.Color.ForestGreen;
             this.panel9.Controls.Add(this.label4);
             this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(165, 120);
+            this.panel9.Size = new System.Drawing.Size(186, 150);
             this.panel9.TabIndex = 15;
             // 
             // label4
@@ -230,9 +242,9 @@
             this.label4.BackColor = System.Drawing.Color.ForestGreen;
             this.label4.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(25, 9);
+            this.label4.Location = new System.Drawing.Point(28, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 101);
+            this.label4.Size = new System.Drawing.Size(117, 121);
             this.label4.TabIndex = 15;
             this.label4.Text = "S";
             // 
@@ -244,10 +256,10 @@
             this.btnSimpan.ForeColor = System.Drawing.Color.White;
             this.btnSimpan.Image = global::AplikasiSampahJabar.Properties.Resources.SAVE;
             this.btnSimpan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSimpan.Location = new System.Drawing.Point(3, 440);
+            this.btnSimpan.Location = new System.Drawing.Point(3, 550);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(2);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(150, 80);
+            this.btnSimpan.Size = new System.Drawing.Size(169, 100);
             this.btnSimpan.TabIndex = 7;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -260,9 +272,10 @@
             this.cmbstatussampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.cmbstatussampah.ForeColor = System.Drawing.Color.White;
             this.cmbstatussampah.FormattingEnabled = true;
-            this.cmbstatussampah.Location = new System.Drawing.Point(244, 78);
+            this.cmbstatussampah.Location = new System.Drawing.Point(274, 98);
+            this.cmbstatussampah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbstatussampah.Name = "cmbstatussampah";
-            this.cmbstatussampah.Size = new System.Drawing.Size(271, 26);
+            this.cmbstatussampah.Size = new System.Drawing.Size(304, 30);
             this.cmbstatussampah.TabIndex = 58;
             this.cmbstatussampah.SelectedIndexChanged += new System.EventHandler(this.cmbstatussampah_SelectedIndexChanged);
             // 
@@ -271,10 +284,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(241, 61);
+            this.label2.Location = new System.Drawing.Point(271, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.Size = new System.Drawing.Size(52, 19);
             this.label2.TabIndex = 55;
             this.label2.Text = "Status";
             // 
@@ -285,9 +298,10 @@
             this.datejemputsampah.CalendarTitleForeColor = System.Drawing.Color.White;
             this.datejemputsampah.CustomFormat = "HH:mm dd/MM/yyyy";
             this.datejemputsampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.datejemputsampah.Location = new System.Drawing.Point(309, 199);
+            this.datejemputsampah.Location = new System.Drawing.Point(348, 249);
+            this.datejemputsampah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.datejemputsampah.Name = "datejemputsampah";
-            this.datejemputsampah.Size = new System.Drawing.Size(509, 26);
+            this.datejemputsampah.Size = new System.Drawing.Size(572, 30);
             this.datejemputsampah.TabIndex = 59;
             this.datejemputsampah.ValueChanged += new System.EventHandler(this.datejemputsampah_ValueChanged);
             // 
@@ -298,9 +312,10 @@
             this.cmbnamasampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.cmbnamasampah.ForeColor = System.Drawing.Color.White;
             this.cmbnamasampah.FormattingEnabled = true;
-            this.cmbnamasampah.Location = new System.Drawing.Point(568, 78);
+            this.cmbnamasampah.Location = new System.Drawing.Point(639, 98);
+            this.cmbnamasampah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbnamasampah.Name = "cmbnamasampah";
-            this.cmbnamasampah.Size = new System.Drawing.Size(250, 26);
+            this.cmbnamasampah.Size = new System.Drawing.Size(281, 30);
             this.cmbnamasampah.TabIndex = 67;
             this.cmbnamasampah.SelectedIndexChanged += new System.EventHandler(this.cmbnamasampah_SelectedIndexChanged);
             // 
@@ -309,10 +324,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(565, 61);
+            this.label3.Location = new System.Drawing.Point(636, 76);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 16);
+            this.label3.Size = new System.Drawing.Size(130, 19);
             this.label3.TabIndex = 64;
             this.label3.Text = "Nama Sampah";
             // 
@@ -321,19 +336,20 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(183, 135);
+            this.label5.Location = new System.Drawing.Point(206, 169);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 16);
+            this.label5.Size = new System.Drawing.Size(72, 19);
             this.label5.TabIndex = 68;
             this.label5.Text = "Catatan";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(184, 188);
+            this.panel10.Location = new System.Drawing.Point(207, 235);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(680, 3);
+            this.panel10.Size = new System.Drawing.Size(765, 4);
             this.panel10.TabIndex = 70;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
@@ -343,9 +359,10 @@
             this.richtxtcatatansampah.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richtxtcatatansampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.richtxtcatatansampah.ForeColor = System.Drawing.Color.White;
-            this.richtxtcatatansampah.Location = new System.Drawing.Point(187, 154);
+            this.richtxtcatatansampah.Location = new System.Drawing.Point(210, 192);
+            this.richtxtcatatansampah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.richtxtcatatansampah.Name = "richtxtcatatansampah";
-            this.richtxtcatatansampah.Size = new System.Drawing.Size(677, 34);
+            this.richtxtcatatansampah.Size = new System.Drawing.Size(762, 42);
             this.richtxtcatatansampah.TabIndex = 71;
             this.richtxtcatatansampah.Text = "";
             this.richtxtcatatansampah.TextChanged += new System.EventHandler(this.richtxtcatatansampah_TextChanged);
@@ -353,45 +370,50 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_trash_48;
-            this.pictureBox6.Location = new System.Drawing.Point(519, 61);
+            this.pictureBox6.Location = new System.Drawing.Point(584, 76);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox6.Size = new System.Drawing.Size(54, 74);
             this.pictureBox6.TabIndex = 65;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::AplikasiSampahJabar.Properties.Resources.garbage_truck__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(184, 61);
+            this.pictureBox4.Location = new System.Drawing.Point(207, 76);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(59, 59);
+            this.pictureBox4.Size = new System.Drawing.Size(66, 74);
             this.pictureBox4.TabIndex = 56;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_weight_50;
-            this.pictureBox3.Location = new System.Drawing.Point(626, -92);
+            this.pictureBox3.Location = new System.Drawing.Point(704, -115);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox3.Size = new System.Drawing.Size(54, 74);
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_trash_48;
-            this.pictureBox2.Location = new System.Drawing.Point(382, -92);
+            this.pictureBox2.Location = new System.Drawing.Point(430, -115);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox2.Size = new System.Drawing.Size(54, 74);
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_location_50;
-            this.pictureBox1.Location = new System.Drawing.Point(149, -92);
+            this.pictureBox1.Location = new System.Drawing.Point(168, -115);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(54, 74);
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
@@ -400,20 +422,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(183, 199);
+            this.label1.Location = new System.Drawing.Point(206, 249);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 16);
+            this.label1.Size = new System.Drawing.Size(137, 19);
             this.label1.TabIndex = 72;
             this.label1.Text = "Tanggal Jemput";
             // 
             // Form9
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(878, 694);
+            this.ClientSize = new System.Drawing.Size(988, 868);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richtxtcatatansampah);
             this.Controls.Add(this.panel10);
@@ -441,8 +463,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form9";
-            this.Text = "Form9";
+            this.Text = "Penjemputan Sampah";
             this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

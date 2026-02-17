@@ -56,9 +56,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel4.Location = new System.Drawing.Point(159, 126);
+            this.panel4.Location = new System.Drawing.Point(179, 158);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 580);
+            this.panel4.Size = new System.Drawing.Size(11, 725);
             this.panel4.TabIndex = 18;
             // 
             // panel1
@@ -69,8 +70,9 @@
             this.panel1.Controls.Add(this.btnmaplokasisampah);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(153, 694);
+            this.panel1.Size = new System.Drawing.Size(172, 868);
             this.panel1.TabIndex = 16;
             // 
             // btnLogout
@@ -81,10 +83,10 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnLogout.Location = new System.Drawing.Point(0, 600);
+            this.btnLogout.Location = new System.Drawing.Point(0, 750);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(150, 90);
+            this.btnLogout.Size = new System.Drawing.Size(169, 112);
             this.btnLogout.TabIndex = 22;
             this.btnLogout.Text = "Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -99,10 +101,10 @@
             this.btnExportPDF.ForeColor = System.Drawing.Color.White;
             this.btnExportPDF.Image = global::AplikasiSampahJabar.Properties.Resources.PDF;
             this.btnExportPDF.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExportPDF.Location = new System.Drawing.Point(0, 466);
+            this.btnExportPDF.Location = new System.Drawing.Point(0, 582);
             this.btnExportPDF.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportPDF.Name = "btnExportPDF";
-            this.btnExportPDF.Size = new System.Drawing.Size(150, 90);
+            this.btnExportPDF.Size = new System.Drawing.Size(169, 112);
             this.btnExportPDF.TabIndex = 21;
             this.btnExportPDF.Text = "Export ke PDF";
             this.btnExportPDF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -114,8 +116,9 @@
             this.panel3.BackColor = System.Drawing.Color.ForestGreen;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(165, 120);
+            this.panel3.Size = new System.Drawing.Size(186, 150);
             this.panel3.TabIndex = 15;
             // 
             // label4
@@ -124,9 +127,9 @@
             this.label4.BackColor = System.Drawing.Color.ForestGreen;
             this.label4.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(25, 9);
+            this.label4.Location = new System.Drawing.Point(28, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 101);
+            this.label4.Size = new System.Drawing.Size(117, 121);
             this.label4.TabIndex = 15;
             this.label4.Text = "S";
             // 
@@ -138,10 +141,10 @@
             this.btnmaplokasisampah.ForeColor = System.Drawing.Color.White;
             this.btnmaplokasisampah.Image = ((System.Drawing.Image)(resources.GetObject("btnmaplokasisampah.Image")));
             this.btnmaplokasisampah.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnmaplokasisampah.Location = new System.Drawing.Point(3, 320);
+            this.btnmaplokasisampah.Location = new System.Drawing.Point(3, 400);
             this.btnmaplokasisampah.Margin = new System.Windows.Forms.Padding(2);
             this.btnmaplokasisampah.Name = "btnmaplokasisampah";
-            this.btnmaplokasisampah.Size = new System.Drawing.Size(150, 90);
+            this.btnmaplokasisampah.Size = new System.Drawing.Size(169, 112);
             this.btnmaplokasisampah.TabIndex = 7;
             this.btnmaplokasisampah.Text = "Lokasi Sampah";
             this.btnmaplokasisampah.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -155,9 +158,10 @@
             this.panel2.Controls.Add(this.btnjemputsampah);
             this.panel2.Controls.Add(this.btnchatai);
             this.panel2.Controls.Add(this.btninputsampah);
-            this.panel2.Location = new System.Drawing.Point(145, 0);
+            this.panel2.Location = new System.Drawing.Point(163, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(733, 120);
+            this.panel2.Size = new System.Drawing.Size(825, 150);
             this.panel2.TabIndex = 19;
             // 
             // btnKelolaUser
@@ -168,10 +172,10 @@
             this.btnKelolaUser.ForeColor = System.Drawing.Color.White;
             this.btnKelolaUser.Image = ((System.Drawing.Image)(resources.GetObject("btnKelolaUser.Image")));
             this.btnKelolaUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnKelolaUser.Location = new System.Drawing.Point(403, 21);
+            this.btnKelolaUser.Location = new System.Drawing.Point(453, 26);
             this.btnKelolaUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnKelolaUser.Name = "btnKelolaUser";
-            this.btnKelolaUser.Size = new System.Drawing.Size(150, 90);
+            this.btnKelolaUser.Size = new System.Drawing.Size(169, 112);
             this.btnKelolaUser.TabIndex = 22;
             this.btnKelolaUser.Text = "Kelola User";
             this.btnKelolaUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -186,10 +190,10 @@
             this.btnjemputsampah.ForeColor = System.Drawing.Color.White;
             this.btnjemputsampah.Image = ((System.Drawing.Image)(resources.GetObject("btnjemputsampah.Image")));
             this.btnjemputsampah.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnjemputsampah.Location = new System.Drawing.Point(219, 21);
+            this.btnjemputsampah.Location = new System.Drawing.Point(246, 26);
             this.btnjemputsampah.Margin = new System.Windows.Forms.Padding(2);
             this.btnjemputsampah.Name = "btnjemputsampah";
-            this.btnjemputsampah.Size = new System.Drawing.Size(150, 90);
+            this.btnjemputsampah.Size = new System.Drawing.Size(169, 112);
             this.btnjemputsampah.TabIndex = 21;
             this.btnjemputsampah.Text = "Jemput Sampah";
             this.btnjemputsampah.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -205,9 +209,10 @@
             this.btnchatai.ForeColor = System.Drawing.Color.White;
             this.btnchatai.Image = ((System.Drawing.Image)(resources.GetObject("btnchatai.Image")));
             this.btnchatai.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnchatai.Location = new System.Drawing.Point(571, 21);
+            this.btnchatai.Location = new System.Drawing.Point(642, 26);
+            this.btnchatai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnchatai.Name = "btnchatai";
-            this.btnchatai.Size = new System.Drawing.Size(150, 90);
+            this.btnchatai.Size = new System.Drawing.Size(169, 112);
             this.btnchatai.TabIndex = 21;
             this.btnchatai.Text = "Chat Trashy";
             this.btnchatai.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -222,10 +227,10 @@
             this.btninputsampah.ForeColor = System.Drawing.Color.White;
             this.btninputsampah.Image = ((System.Drawing.Image)(resources.GetObject("btninputsampah.Image")));
             this.btninputsampah.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btninputsampah.Location = new System.Drawing.Point(40, 21);
+            this.btninputsampah.Location = new System.Drawing.Point(45, 26);
             this.btninputsampah.Margin = new System.Windows.Forms.Padding(2);
             this.btninputsampah.Name = "btninputsampah";
-            this.btninputsampah.Size = new System.Drawing.Size(150, 90);
+            this.btninputsampah.Size = new System.Drawing.Size(169, 112);
             this.btninputsampah.TabIndex = 20;
             this.btninputsampah.Text = "Input Sampah";
             this.btninputsampah.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -235,9 +240,10 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel5.Location = new System.Drawing.Point(159, 126);
+            this.panel5.Location = new System.Drawing.Point(179, 158);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(720, 10);
+            this.panel5.Size = new System.Drawing.Size(810, 12);
             this.panel5.TabIndex = 20;
             // 
             // dataGridView1
@@ -245,19 +251,20 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.Location = new System.Drawing.Point(185, 150);
+            this.dataGridView1.Location = new System.Drawing.Point(208, 188);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 480);
+            this.dataGridView1.Size = new System.Drawing.Size(767, 600);
             this.dataGridView1.TabIndex = 21;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(793, 640);
+            this.btnRefresh.Location = new System.Drawing.Point(892, 800);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(84, 29);
             this.btnRefresh.TabIndex = 25;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -266,36 +273,38 @@
             // 
             this.lblPageInfo.AutoSize = true;
             this.lblPageInfo.ForeColor = System.Drawing.Color.White;
-            this.lblPageInfo.Location = new System.Drawing.Point(266, 642);
+            this.lblPageInfo.Location = new System.Drawing.Point(299, 802);
             this.lblPageInfo.Name = "lblPageInfo";
-            this.lblPageInfo.Size = new System.Drawing.Size(74, 16);
+            this.lblPageInfo.Size = new System.Drawing.Size(90, 20);
             this.lblPageInfo.TabIndex = 24;
             this.lblPageInfo.Text = "Page 1 of 1";
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(392, 640);
+            this.btnNext.Location = new System.Drawing.Point(441, 800);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.Size = new System.Drawing.Size(84, 29);
             this.btnNext.TabIndex = 23;
             this.btnNext.Text = "Next >";
             this.btnNext.UseVisualStyleBackColor = true;
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(185, 640);
+            this.btnPrevious.Location = new System.Drawing.Point(208, 800);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
+            this.btnPrevious.Size = new System.Drawing.Size(84, 29);
             this.btnPrevious.TabIndex = 22;
             this.btnPrevious.Text = "< Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(878, 694);
+            this.ClientSize = new System.Drawing.Size(988, 868);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblPageInfo);
             this.Controls.Add(this.btnNext);
@@ -305,8 +314,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Admin Dashboard";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

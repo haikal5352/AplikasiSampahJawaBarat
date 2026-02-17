@@ -29,18 +29,26 @@ namespace AplikasiSampahJabar
         {
             btnchatai.Click += BtnChatTrashy_Click;
             btnmaplokasisampah.Click += BtnLokasiSampah_Click;
-            btndetailsampah.Click += BtnDetailSampah_Click;
         }
         
         private void BtnChatTrashy_Click(object sender, EventArgs e)
         {
-            ErrorHandler.ShowInfo("Fitur Chat Trashy dengan Mistral AI\n\nDalam Pengembangan", "Info");
+            this.Hide();
+            using (Form11 chatForm = new Form11())
+            {
+                chatForm.ShowDialog();
+            }
+            this.Show();
         }
         
         private void BtnLokasiSampah_Click(object sender, EventArgs e)
         {
-            Form10 formMap = new Form10();
-            formMap.ShowDialog();
+            this.Hide();
+            using (Form10 formMap = new Form10())
+            {
+                formMap.ShowDialog();
+            }
+            this.Show();
         }
         
         private void BtnDetailSampah_Click(object sender, EventArgs e)

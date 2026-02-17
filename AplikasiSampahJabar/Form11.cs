@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using MongoDB.Driver;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
@@ -16,9 +17,10 @@ namespace AplikasiSampahJabar
     public partial class Form11 : Form
     {
         private SampahHelper sampahHelper;
+        private MistralAIHelper aiHelper;
         private MongoClient client;
         private IMongoDatabase database;
-        private DataTable fullDataSet;
+        private string _initialInstructions;
 
         public Form11()
         {
@@ -43,6 +45,7 @@ namespace AplikasiSampahJabar
                 client = new MongoClient(connectionString);
                 database = client.GetDatabase(Constants.DATABASE_NAME);
                 sampahHelper = new SampahHelper(database);
+                aiHelper = new MistralAIHelper(sampahHelper);
             }
             catch (Exception ex)
             {
@@ -53,157 +56,179 @@ namespace AplikasiSampahJabar
 
         private void InitializeUI()
         {
-            LoadDataForPreview();
+            // Store initial instructions from Designer/RESX
+            _initialInstructions = Panelchat.Text;
+            
+            // Append initial greeting
+            AppendChat("Trashy", "Halo! Saya Trashy AI, asisten pengelolaan sampah Anda. Ada yang bisa saya bantu hari ini?");
             
             // Wire up events
-            if (btnExportPDF != null) btnExportPDF.Click += btnExport_Click;
-            if (btnRefresh != null) btnRefresh.Click += (s, e) => LoadDataForPreview();
+            if (kirim != null) kirim.Click += async (s, e) => await SendMessage();
+            if (Reset != null) Reset.Click += (s, e) => ResetChat();
+            if (btnExportPDF != null) btnExportPDF.Click += (s, e) => ExportChatToPDF();
+            
+            if (panelchatbot != null)
+            {
+                string placeholder = "Ketik Disini Untuk Bertanya Seputar Sampah Ke Trashy";
+                
+                panelchatbot.Enter += (s, e) =>
+                {
+                    if (panelchatbot.Text == placeholder)
+                    {
+                        panelchatbot.Text = "";
+                        panelchatbot.ForeColor = System.Drawing.Color.White;
+                    }
+                };
 
-             // Wire up Keluar
+                panelchatbot.Leave += (s, e) =>
+                {
+                    if (string.IsNullOrWhiteSpace(panelchatbot.Text))
+                    {
+                        panelchatbot.Text = placeholder;
+                        panelchatbot.ForeColor = System.Drawing.Color.Gray;
+                    }
+                };
+
+                panelchatbot.KeyDown += async (s, e) =>
+                {
+                    if (e.KeyCode == Keys.Enter)
+                    {
+                        e.SuppressKeyPress = true;
+                        await SendMessage();
+                    }
+                };
+            }
+
+            // Wire up Keluar
             Button btnKeluar = this.Controls.Find("button4", true).FirstOrDefault() as Button;
             if (btnKeluar != null) btnKeluar.Click += (s, e) => this.Close();
         }
 
-        private void LoadDataForPreview()
+        private async Task SendMessage()
         {
-            try
+            string userMessage = panelchatbot.Text.Trim();
+            if (string.IsNullOrEmpty(userMessage) || userMessage == "Ketik Disini Untuk Bertanya Seputar Sampah Ke Trashy")
+                return;
+
+            AppendChat("Anda", userMessage);
+            panelchatbot.Clear();
+
+            AppendChat("Trashy", "[Sedang berpikir...]");
+            
+            string aiResponse = await aiHelper.GetChatResponseAsync(userMessage);
+            
+            // Remove "[Sedang berpikir...]" and add real response
+            RemoveLastLine();
+            AppendChat("Trashy", aiResponse);
+        }
+
+        private void AppendChat(string sender, string message)
+        {
+            if (Panelchat.InvokeRequired)
             {
-                var sampahList = sampahHelper.GetAllSampah();
-                
-                fullDataSet = new DataTable();
-                fullDataSet.Columns.Add("Nama Sampah");
-                fullDataSet.Columns.Add("Jenis");
-                fullDataSet.Columns.Add("Lokasi TPS");
-                fullDataSet.Columns.Add("Status");
-                fullDataSet.Columns.Add("Waktu Input");
-
-                foreach (var s in sampahList)
-                {
-                    fullDataSet.Rows.Add(
-                        s.NamaSampah,
-                        s.JenisSampah,
-                        s.LokasiTPS,
-                        s.Status,
-                        s.WaktuInput.ToString("dd/MM/yyyy")
-                    );
-                }
-
-                if (dataGridView1 != null)
-                {
-                    dataGridView1.DataSource = fullDataSet;
-                }
+                Panelchat.Invoke(new Action(() => AppendChat(sender, message)));
+                return;
             }
-            catch (Exception ex)
+
+            Panelchat.SelectionStart = Panelchat.TextLength;
+            Panelchat.SelectionFont = new System.Drawing.Font(Panelchat.Font, System.Drawing.FontStyle.Bold);
+            Panelchat.AppendText($"{sender}: ");
+            
+            Panelchat.SelectionStart = Panelchat.TextLength;
+            Panelchat.SelectionFont = new System.Drawing.Font(Panelchat.Font, System.Drawing.FontStyle.Regular);
+            Panelchat.AppendText($"{message}\n\n");
+            
+            Panelchat.ScrollToCaret();
+        }
+
+        private void RemoveLastLine()
+        {
+            if (Panelchat.InvokeRequired)
             {
-                ErrorHandler.LogError(ex, "LoadDataForPreview");
+                Panelchat.Invoke(new Action(RemoveLastLine));
+                return;
+            }
+
+            string[] lines = Panelchat.Lines;
+            if (lines.Length > 0)
+            {
+                // Simple way: find the last occurrence of "Trashy: [Sedang berpikir...]"
+                int lastIdx = Panelchat.Text.LastIndexOf("Trashy: [Sedang berpikir...]");
+                if (lastIdx != -1)
+                {
+                    Panelchat.Select(lastIdx, Panelchat.Text.Length - lastIdx);
+                    Panelchat.SelectedText = "";
+                }
             }
         }
 
-        private void btnExport_Click(object sender, EventArgs e)
+        private void ResetChat()
+        {
+            Panelchat.Text = _initialInstructions;
+            AppendChat("Trashy", "Percakapan telah direset. Ada lagi yang bisa saya bantu?");
+            panelchatbot.Focus();
+        }
+
+        private void ExportChatToPDF()
         {
             try
             {
-                if (fullDataSet == null || fullDataSet.Rows.Count == 0)
+                if (string.IsNullOrEmpty(Panelchat.Text))
                 {
-                    ErrorHandler.ShowWarning("Tidak ada data untuk diexport!", "Peringatan");
+                    ErrorHandler.ShowWarning("Tidak ada chat untuk diexport!", "Peringatan");
                     return;
                 }
 
                 SaveFileDialog sfd = new SaveFileDialog
                 {
                     Filter = "PDF Files (*.pdf)|*.pdf",
-                    FileName = $"Laporan_Sampah_{DateTime.Now:yyyyMMdd_HHmm}.pdf"
+                    FileName = $"Chat_Trashy_{DateTime.Now:yyyyMMdd_HHmm}.pdf"
                 };
 
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    GeneratePDF(sfd.FileName);
-                    ErrorHandler.ShowInfo("PDF berhasil dibuat!", Constants.TITLE_SUCCESS);
-                }
-            }
-            catch (Exception ex)
-            {
-                ErrorHandler.LogError(ex, "btnExport_Click");
-                ErrorHandler.ShowError("Gagal export PDF: " + ex.Message);
-            }
-        }
-
-        private void GeneratePDF(string fileName)
-        {
-            try
-            {
-                using (PdfWriter writer = new PdfWriter(fileName))
-                {
-                    using (PdfDocument pdf = new PdfDocument(writer))
+                    using (PdfWriter writer = new PdfWriter(sfd.FileName))
                     {
-                        Document doc = new Document(pdf, PageSize.A4.Rotate());
-                        
-                        // Title
-                        Paragraph title = new Paragraph("Laporan Data Sampah Jawa Barat")
-                            .SetTextAlignment(TextAlignment.CENTER)
-                            .SetFontSize(20);
-                            // .SetBold() removed as it might be an extension method issue; using default font for now or add explicit font later if needed
-                        doc.Add(title);
-                        
-                        doc.Add(new Paragraph($"Tanggal Cetak: {DateTime.Now:dd/MM/yyyy HH:mm}")
-                            .SetTextAlignment(TextAlignment.CENTER).SetFontSize(10));
-                        
-                        doc.Add(new Paragraph("\n"));
-
-                        // Table
-                        Table table = new Table(UnitValue.CreatePercentArray(new float[] { 20, 15, 20, 15, 15 }));
-                        table.SetWidth(UnitValue.CreatePercentValue(100));
-
-                        // Headers
-                        string[] headers = { "Nama Sampah", "Jenis", "Lokasi TPS", "Status", "Waktu Input" };
-                        foreach (var header in headers)
+                        using (PdfDocument pdf = new PdfDocument(writer))
                         {
-                            // Using standard font helper effectively makes it bold if we used the right font, 
-                            // but simply removing SetBold to fix compile error first. 
-                            // Can use .SetFont(PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD)) if critical.
-                            table.AddHeaderCell(new Cell().Add(new Paragraph(header)).SetBackgroundColor(ColorConstants.LIGHT_GRAY));
+                            Document doc = new Document(pdf, PageSize.A4);
+                            
+                            doc.Add(new Paragraph("Riwayat Chat Trashy AI")
+                                .SetTextAlignment(TextAlignment.CENTER)
+                                .SetFontSize(18));
+                            
+                            doc.Add(new Paragraph($"Tanggal Export: {DateTime.Now:dd/MM/yyyy HH:mm}")
+                                .SetTextAlignment(TextAlignment.RIGHT).SetFontSize(10));
+                            
+                            doc.Add(new Paragraph("\n"));
+                            
+                            string[] lines = Panelchat.Text.Split(new[] { "\n\n" }, StringSplitOptions.None);
+                            foreach (var line in lines)
+                            {
+                                if (string.IsNullOrWhiteSpace(line)) continue;
+                                
+                                var p = new Paragraph(line).SetFontSize(11);
+                                if (line.StartsWith("Trashy:"))
+                                {
+                                    p.SetBackgroundColor(ColorConstants.LIGHT_GRAY);
+                                }
+                                doc.Add(p);
+                            }
                         }
-
-                        // Data
-                        foreach (DataRow row in fullDataSet.Rows)
-                        {
-                            table.AddCell(row["Nama Sampah"].ToString());
-                            table.AddCell(row["Jenis"].ToString());
-                            table.AddCell(row["Lokasi TPS"].ToString());
-                            table.AddCell(row["Status"].ToString());
-                            table.AddCell(row["Waktu Input"].ToString());
-                        }
-
-                        doc.Add(table);
-                        
-                        // Footer / Summary
-                        doc.Add(new Paragraph("\n"));
-                        doc.Add(new Paragraph($"Total Data: {fullDataSet.Rows.Count} items."));
                     }
+                    ErrorHandler.ShowInfo("Chat successfully exported to PDF!", Constants.TITLE_SUCCESS);
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                ErrorHandler.LogError(ex, "ExportChatToPDF");
+                ErrorHandler.ShowError("Gagal export chat: " + ex.Message);
             }
         }
 
-        private void Form11_Load(object sender, EventArgs e) 
-        { 
-
-            
-            LoadDataForPreview();
-        }
+        private void Form11_Load(object sender, EventArgs e) { }
         private void button4_Click(object sender, EventArgs e) { }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void panel10_Paint(object sender, PaintEventArgs e) { }
+        private void textBox1_TextChanged(object sender, EventArgs e) { }
     }
 }

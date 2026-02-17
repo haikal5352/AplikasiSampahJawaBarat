@@ -68,9 +68,6 @@ namespace AplikasiSampahJabar
             
             // Export Logic
             if (btnExportPDF != null) btnExportPDF.Click += BtnExportUserPDF_Click;
-            
-            // Simpan (not needed for now or can show info)
-            if (btnSimpan != null) btnSimpan.Click += (s, e) => ErrorHandler.ShowInfo("Fitur Edit User belum tersedia.", "Info");
         }
 
         private void LoadAllUsers()
