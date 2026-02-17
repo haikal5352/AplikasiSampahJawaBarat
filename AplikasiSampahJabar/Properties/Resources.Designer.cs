@@ -83,6 +83,16 @@ namespace AplikasiSampahJabar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap garbage {
+            get {
+                object obj = ResourceManager.GetObject("garbage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap garbage_truck {
             get {
                 object obj = ResourceManager.GetObject("garbage-truck", resourceCulture);
@@ -216,6 +226,16 @@ namespace AplikasiSampahJabar.Properties {
         internal static System.Drawing.Bitmap profile_picture {
             get {
                 object obj = ResourceManager.GetObject("profile-picture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sampah {
+            get {
+                object obj = ResourceManager.GetObject("Sampah", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

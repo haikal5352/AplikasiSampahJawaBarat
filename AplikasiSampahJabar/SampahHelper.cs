@@ -160,6 +160,31 @@ namespace AplikasiSampahJabar
                 return new Dictionary<string, int>();
             }
         }
+        
+        public Dictionary<string, int> GetSampahByJenis()
+        {
+            try
+            {
+                var result = new Dictionary<string, int>();
+                var allSampah = _sampahCollection.Find(_ => true).ToList();
+                
+                foreach (var sampah in allSampah)
+                {
+                    if (result.ContainsKey(sampah.JenisSampah))
+                        result[sampah.JenisSampah]++;
+                    else
+                        result[sampah.JenisSampah] = 1;
+                }
+                
+                return result;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.LogError(ex, "GetSampahByJenis");
+                return new Dictionary<string, int>();
+            }
+        }
+        
         public Dictionary<string, (int Count, double Volume)> GetSampahByLokasiAggregated()
         {
             try

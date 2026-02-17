@@ -117,65 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="garbage-truck" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\garbage-truck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="profile-picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\profile-picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-mail-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-mail-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DELETED" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\DELETED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-deleted-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-deleted-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\PDF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="garbage-truck (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\garbage-truck (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-weight-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-weight-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SAVE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\SAVE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-location-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-location-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-trash-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-trash-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\Mail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-save-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-save-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PBT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\PBT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PBT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\PBT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="11189432" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\11189432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Trashy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\Trashy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-pdf-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\icons8-pdf-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="garbage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\garbage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sampah" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\Sampah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        B+/ELlxbiq1+AAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

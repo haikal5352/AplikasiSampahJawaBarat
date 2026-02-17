@@ -110,6 +110,12 @@ namespace AplikasiSampahJabar
              {
                  btnRefresh.Click += (s, ev) => LoadData();
              }
+
+    // Wire up Chart Button
+             if (this.Controls.Find("buttonChartSampah", true).FirstOrDefault() is Button btnChart)
+     {
+   btnChart.Click += BtnChartSampah_Click;
+             }
         }
 
         private void LoadData()
@@ -162,6 +168,16 @@ namespace AplikasiSampahJabar
             {
                 ErrorHandler.ShowError($"Gagal memuat data: {ex.Message}");
             }
+        }
+
+        private void BtnChartSampah_Click(object sender, EventArgs e)
+        {
+this.Hide();
+      using (Form12 formChart = new Form12())
+      {
+              formChart.ShowDialog();
+            }
+            this.Show();
         }
     }
 }
