@@ -80,4 +80,4 @@ AplikasiSampahJawaBarat/
 Aplikasi ini dikembangkan dengan menekankan pada efisiensi akses data dan kemudahan penggunaan bagi masyarakat awam maupun petugas lapangan. Fitur AI diharapkan dapat meningkatkan kesadaran masyarakat tentang pentingnya pemilahan sampah.
 
 ---
-**© 2024 - Proyek UAS Pemrograman Berorientasi Objek**
+**© 2026 - UAS Pemrograman Berorientasi Objek**
