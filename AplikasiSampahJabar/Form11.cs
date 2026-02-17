@@ -195,5 +195,15 @@ namespace AplikasiSampahJabar
             LoadDataForPreview();
         }
         private void button4_Click(object sender, EventArgs e) { }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

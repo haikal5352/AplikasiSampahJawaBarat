@@ -39,7 +39,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnSimpan = new System.Windows.Forms.Button();
             this.btnExportPDF = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -109,7 +108,6 @@
             // 
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.btnSimpan);
             this.panel1.Controls.Add(this.btnExportPDF);
             this.panel1.Controls.Add(this.btnHapus);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -155,23 +153,6 @@
             this.label4.Size = new System.Drawing.Size(97, 101);
             this.label4.TabIndex = 15;
             this.label4.Text = "S";
-            // 
-            // btnSimpan
-            // 
-            this.btnSimpan.FlatAppearance.BorderSize = 0;
-            this.btnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSimpan.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSimpan.ForeColor = System.Drawing.Color.White;
-            this.btnSimpan.Image = global::AplikasiSampahJabar.Properties.Resources.SAVE;
-            this.btnSimpan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSimpan.Location = new System.Drawing.Point(2, 175);
-            this.btnSimpan.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(150, 80);
-            this.btnSimpan.TabIndex = 7;
-            this.btnSimpan.Text = "Simpan";
-            this.btnSimpan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSimpan.UseVisualStyleBackColor = true;
             // 
             // btnExportPDF
             // 
@@ -243,7 +224,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnExportPDF;
         private System.Windows.Forms.Button btnHapus;
     }

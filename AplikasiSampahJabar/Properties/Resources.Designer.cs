@@ -183,6 +183,26 @@ namespace AplikasiSampahJabar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PBT {
+            get {
+                object obj = ResourceManager.GetObject("PBT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PBT1 {
+            get {
+                object obj = ResourceManager.GetObject("PBT1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PDF {
             get {
                 object obj = ResourceManager.GetObject("PDF", resourceCulture);
@@ -206,6 +226,16 @@ namespace AplikasiSampahJabar.Properties {
         internal static System.Drawing.Bitmap SAVE {
             get {
                 object obj = ResourceManager.GetObject("SAVE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trashy {
+            get {
+                object obj = ResourceManager.GetObject("Trashy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

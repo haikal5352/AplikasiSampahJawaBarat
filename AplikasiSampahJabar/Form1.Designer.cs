@@ -38,7 +38,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnExportPDF = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -93,7 +92,7 @@
             this.label1.Location = new System.Drawing.Point(234, 111);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 19);
+            this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Lokasi TPS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -106,7 +105,7 @@
             this.label2.Location = new System.Drawing.Point(568, 27);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 19);
+            this.label2.Size = new System.Drawing.Size(97, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Jenis Sampah";
             // 
@@ -118,7 +117,7 @@
             this.label3.Location = new System.Drawing.Point(571, 111);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 19);
+            this.label3.Size = new System.Drawing.Size(92, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Volume (Ton)";
             // 
@@ -127,7 +126,6 @@
             this.panel1.Controls.Add(this.btnkeluarmenuinput);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btnSimpan);
-            this.panel1.Controls.Add(this.btnExportPDF);
             this.panel1.Controls.Add(this.btnHapus);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -169,7 +167,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(25, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 121);
+            this.label4.Size = new System.Drawing.Size(97, 101);
             this.label4.TabIndex = 15;
             this.label4.Text = "S";
             // 
@@ -181,7 +179,7 @@
             this.btnSimpan.ForeColor = System.Drawing.Color.White;
             this.btnSimpan.Image = global::AplikasiSampahJabar.Properties.Resources.SAVE;
             this.btnSimpan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSimpan.Location = new System.Drawing.Point(2, 175);
+            this.btnSimpan.Location = new System.Drawing.Point(3, 344);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(2);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(150, 80);
@@ -191,24 +189,6 @@
             this.btnSimpan.UseVisualStyleBackColor = true;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
-            // btnExportPDF
-            // 
-            this.btnExportPDF.FlatAppearance.BorderSize = 0;
-            this.btnExportPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportPDF.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportPDF.ForeColor = System.Drawing.Color.White;
-            this.btnExportPDF.Image = global::AplikasiSampahJabar.Properties.Resources.PDF;
-            this.btnExportPDF.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnExportPDF.Location = new System.Drawing.Point(2, 425);
-            this.btnExportPDF.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExportPDF.Name = "btnExportPDF";
-            this.btnExportPDF.Size = new System.Drawing.Size(150, 80);
-            this.btnExportPDF.TabIndex = 9;
-            this.btnExportPDF.Text = "Export ke PDF";
-            this.btnExportPDF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnExportPDF.UseVisualStyleBackColor = true;
-            this.btnExportPDF.Click += new System.EventHandler(this.btnExportPDF_Click);
-            // 
             // btnHapus
             // 
             this.btnHapus.FlatAppearance.BorderSize = 0;
@@ -217,7 +197,7 @@
             this.btnHapus.ForeColor = System.Drawing.Color.White;
             this.btnHapus.Image = global::AplikasiSampahJabar.Properties.Resources.DELETED;
             this.btnHapus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnHapus.Location = new System.Drawing.Point(2, 300);
+            this.btnHapus.Location = new System.Drawing.Point(3, 438);
             this.btnHapus.Margin = new System.Windows.Forms.Padding(2);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(150, 80);
@@ -285,7 +265,7 @@
             this.lblPageInfo.ForeColor = System.Drawing.Color.White;
             this.lblPageInfo.Location = new System.Drawing.Point(280, 610);
             this.lblPageInfo.Name = "lblPageInfo";
-            this.lblPageInfo.Size = new System.Drawing.Size(96, 21);
+            this.lblPageInfo.Size = new System.Drawing.Size(81, 17);
             this.lblPageInfo.TabIndex = 19;
             this.lblPageInfo.Text = "Page 1 of 1";
             // 
@@ -334,7 +314,7 @@
             this.beratsampah.ForeColor = System.Drawing.Color.White;
             this.beratsampah.Location = new System.Drawing.Point(572, 143);
             this.beratsampah.Name = "beratsampah";
-            this.beratsampah.Size = new System.Drawing.Size(261, 26);
+            this.beratsampah.Size = new System.Drawing.Size(261, 22);
             this.beratsampah.TabIndex = 21;
             this.beratsampah.ValueChanged += new System.EventHandler(this.beratsampah_ValueChanged);
             // 
@@ -347,7 +327,7 @@
             this.cmblokasitps.FormattingEnabled = true;
             this.cmblokasitps.Location = new System.Drawing.Point(237, 140);
             this.cmblokasitps.Name = "cmblokasitps";
-            this.cmblokasitps.Size = new System.Drawing.Size(265, 30);
+            this.cmblokasitps.Size = new System.Drawing.Size(265, 26);
             this.cmblokasitps.TabIndex = 22;
             this.cmblokasitps.SelectedIndexChanged += new System.EventHandler(this.cmblokasitps_SelectedIndexChanged);
             // 
@@ -360,7 +340,7 @@
             this.cmbjenissampah.FormattingEnabled = true;
             this.cmbjenissampah.Location = new System.Drawing.Point(571, 49);
             this.cmbjenissampah.Name = "cmbjenissampah";
-            this.cmbjenissampah.Size = new System.Drawing.Size(264, 30);
+            this.cmbjenissampah.Size = new System.Drawing.Size(264, 26);
             this.cmbjenissampah.TabIndex = 23;
             this.cmbjenissampah.SelectedIndexChanged += new System.EventHandler(this.cmbjenissampah_SelectedIndexChanged);
             // 
@@ -371,7 +351,7 @@
             this.dateinputsampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.dateinputsampah.Location = new System.Drawing.Point(317, 267);
             this.dateinputsampah.Name = "dateinputsampah";
-            this.dateinputsampah.Size = new System.Drawing.Size(518, 30);
+            this.dateinputsampah.Size = new System.Drawing.Size(518, 26);
             this.dateinputsampah.TabIndex = 24;
             this.dateinputsampah.ValueChanged += new System.EventHandler(this.dateinputsampah_ValueChanged);
             // 
@@ -406,7 +386,7 @@
             this.label5.Location = new System.Drawing.Point(184, 197);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 19);
+            this.label5.Size = new System.Drawing.Size(60, 16);
             this.label5.TabIndex = 72;
             this.label5.Text = "Catatan";
             // 
@@ -418,7 +398,7 @@
             this.txtnamasampah.ForeColor = System.Drawing.Color.White;
             this.txtnamasampah.Location = new System.Drawing.Point(237, 59);
             this.txtnamasampah.Name = "txtnamasampah";
-            this.txtnamasampah.Size = new System.Drawing.Size(265, 23);
+            this.txtnamasampah.Size = new System.Drawing.Size(265, 19);
             this.txtnamasampah.TabIndex = 75;
             this.txtnamasampah.TextChanged += new System.EventHandler(this.txtnamasampah_TextChanged);
             // 
@@ -439,7 +419,7 @@
             this.label6.Location = new System.Drawing.Point(240, 32);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 19);
+            this.label6.Size = new System.Drawing.Size(105, 16);
             this.label6.TabIndex = 77;
             this.label6.Text = "Nama Sampah";
             // 
@@ -460,13 +440,13 @@
             this.label7.Location = new System.Drawing.Point(184, 272);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 19);
+            this.label7.Size = new System.Drawing.Size(108, 16);
             this.label7.TabIndex = 79;
             this.label7.Text = "Tanggal Masuk";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(878, 694);
@@ -527,7 +507,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnHapus;
-        private System.Windows.Forms.Button btnExportPDF;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
