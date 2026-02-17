@@ -60,5 +60,42 @@ namespace AplikasiSampahJabar
         public const string DUMMY_KABUPATEN = "Bandung";
         public const string DUMMY_JENIS = "Organik";
         public const string DUMMY_VOLUME = "10";
+
+        // User Constants
+        public const string COLLECTION_USERS = "users";
+        public const string COLLECTION_SAMPAH = "sampah_data";
+        public const string ROLE_ADMIN = "Admin";
+        public const string ROLE_PETUGAS = "Petugas";
+        public const string ROLE_PENGGUNA = "Pengguna";
+        public const string STATUS_AKTIF = "Aktif";
+        public const string STATUS_NONAKTIF = "Nonaktif";
+        
+        // Sampah Status
+        public const string STATUS_MENUNGGU = "Menunggu"; // Was Pending
+        public const string STATUS_PENDING = "Menunggu";  // Maintain alias if needed or refactor
+        public const string STATUS_DIJEMPUT = "Dijemput";
+        public const string STATUS_SELESAI = "Selesai";
+        public const string STATUS_BATAL = "Batal";
+        
+        // Jenis Sampah
+        public const string JENIS_ORGANIK = "Organik";
+        public const string JENIS_ANORGANIK = "Anorganik";
+        public const string JENIS_B3 = "B3";
+        
+        // Auth Messages
+        public const string MSG_LOGIN_SUCCESS = "Login berhasil!";
+        public const string MSG_LOGIN_FAILED = "Username atau password salah!";
+        public const string MSG_REGISTER_SUCCESS = "Registrasi berhasil! Silakan login.";
+        public const string MSG_REGISTER_FAILED = "Username sudah digunakan!";
+        public const string MSG_USERNAME_EMPTY = "Username tidak boleh kosong!";
+        public const string MSG_PASSWORD_EMPTY = "Password tidak boleh kosong!";
+        public const string MSG_PASSWORD_MIN = "Password minimal 6 karakter!";
+        
+        // Sampah Messages
+        public const string MSG_SAMPAH_SAVE_SUCCESS = "Data sampah berhasil disimpan!";
+        public const string MSG_SAMPAH_JEMPUT_SUCCESS = "Sampah berhasil dijemput!";
+        public const string MSG_SAMPAH_DELETE_SUCCESS = "Data sampah berhasil dihapus!";
+        public const string MSG_SAMPAH_SELECT = "Pilih data sampah terlebih dahulu!";
+
     }
 }

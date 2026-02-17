@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnkeluarmenuinput = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSimpan = new System.Windows.Forms.Button();
@@ -50,30 +51,38 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.beratsampah = new System.Windows.Forms.NumericUpDown();
+            this.cmblokasitps = new System.Windows.Forms.ComboBox();
+            this.cmbjenissampah = new System.Windows.Forms.ComboBox();
+            this.dateinputsampah = new System.Windows.Forms.DateTimePicker();
+            this.richtxtcatatansampah = new System.Windows.Forms.RichTextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtnamasampah = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beratsampah)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(184, 134);
+            this.dataGridView1.Location = new System.Drawing.Point(184, 300);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(687, 453);
+            this.dataGridView1.Size = new System.Drawing.Size(687, 287);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -81,12 +90,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(234, 32);
+            this.label1.Location = new System.Drawing.Point(234, 111);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 16);
+            this.label1.Size = new System.Drawing.Size(84, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Kabupaten/Kota";
+            this.label1.Text = "Lokasi TPS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // label2
@@ -94,10 +103,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(463, 32);
+            this.label2.Location = new System.Drawing.Point(568, 27);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(118, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Jenis Sampah";
             // 
@@ -106,16 +115,16 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(714, 32);
+            this.label3.Location = new System.Drawing.Point(571, 111);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 16);
+            this.label3.Size = new System.Drawing.Size(113, 19);
             this.label3.TabIndex = 3;
             this.label3.Text = "Volume (Ton)";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btnkeluarmenuinput);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btnSimpan);
             this.panel1.Controls.Add(this.btnExportPDF);
@@ -125,6 +134,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(153, 694);
             this.panel1.TabIndex = 13;
+            // 
+            // btnkeluarmenuinput
+            // 
+            this.btnkeluarmenuinput.FlatAppearance.BorderSize = 0;
+            this.btnkeluarmenuinput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnkeluarmenuinput.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnkeluarmenuinput.ForeColor = System.Drawing.Color.White;
+            this.btnkeluarmenuinput.Image = ((System.Drawing.Image)(resources.GetObject("btnkeluarmenuinput.Image")));
+            this.btnkeluarmenuinput.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnkeluarmenuinput.Location = new System.Drawing.Point(3, 540);
+            this.btnkeluarmenuinput.Margin = new System.Windows.Forms.Padding(2);
+            this.btnkeluarmenuinput.Name = "btnkeluarmenuinput";
+            this.btnkeluarmenuinput.Size = new System.Drawing.Size(150, 90);
+            this.btnkeluarmenuinput.TabIndex = 23;
+            this.btnkeluarmenuinput.Text = "Keluar";
+            this.btnkeluarmenuinput.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnkeluarmenuinput.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -143,7 +169,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(25, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 101);
+            this.label4.Size = new System.Drawing.Size(117, 121);
             this.label4.TabIndex = 15;
             this.label4.Text = "S";
             // 
@@ -204,15 +230,15 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(713, 76);
+            this.panel8.Location = new System.Drawing.Point(572, 162);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(145, 3);
+            this.panel8.Size = new System.Drawing.Size(263, 10);
             this.panel8.TabIndex = 18;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(467, 75);
+            this.panel7.Location = new System.Drawing.Point(572, 63);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(145, 3);
             this.panel7.TabIndex = 18;
@@ -220,7 +246,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(234, 75);
+            this.panel6.Location = new System.Drawing.Point(238, 167);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(145, 3);
             this.panel6.TabIndex = 17;
@@ -259,7 +285,7 @@
             this.lblPageInfo.ForeColor = System.Drawing.Color.White;
             this.lblPageInfo.Location = new System.Drawing.Point(280, 610);
             this.lblPageInfo.Name = "lblPageInfo";
-            this.lblPageInfo.Size = new System.Drawing.Size(81, 17);
+            this.lblPageInfo.Size = new System.Drawing.Size(96, 21);
             this.lblPageInfo.TabIndex = 19;
             this.lblPageInfo.Text = "Page 1 of 1";
             // 
@@ -276,7 +302,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_weight_50;
-            this.pictureBox3.Location = new System.Drawing.Point(661, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(518, 111);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(48, 59);
             this.pictureBox3.TabIndex = 18;
@@ -285,7 +311,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_trash_48;
-            this.pictureBox2.Location = new System.Drawing.Point(417, 32);
+            this.pictureBox2.Location = new System.Drawing.Point(518, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 59);
             this.pictureBox2.TabIndex = 17;
@@ -294,84 +320,168 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_location_50;
-            this.pictureBox1.Location = new System.Drawing.Point(184, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 111);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 59);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // button4
+            // beratsampah
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(3, 540);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 90);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Keluar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.beratsampah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.beratsampah.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.beratsampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.beratsampah.ForeColor = System.Drawing.Color.White;
+            this.beratsampah.Location = new System.Drawing.Point(572, 143);
+            this.beratsampah.Name = "beratsampah";
+            this.beratsampah.Size = new System.Drawing.Size(261, 26);
+            this.beratsampah.TabIndex = 21;
+            this.beratsampah.ValueChanged += new System.EventHandler(this.beratsampah_ValueChanged);
             // 
-            // numericUpDown1
+            // cmblokasitps
             // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDown1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(715, 53);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(143, 22);
-            this.numericUpDown1.TabIndex = 21;
+            this.cmblokasitps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.cmblokasitps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmblokasitps.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.cmblokasitps.ForeColor = System.Drawing.Color.White;
+            this.cmblokasitps.FormattingEnabled = true;
+            this.cmblokasitps.Location = new System.Drawing.Point(237, 140);
+            this.cmblokasitps.Name = "cmblokasitps";
+            this.cmblokasitps.Size = new System.Drawing.Size(265, 30);
+            this.cmblokasitps.TabIndex = 22;
+            this.cmblokasitps.SelectedIndexChanged += new System.EventHandler(this.cmblokasitps_SelectedIndexChanged);
             // 
-            // comboBox1
+            // cmbjenissampah
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(234, 50);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(145, 26);
-            this.comboBox1.TabIndex = 22;
+            this.cmbjenissampah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.cmbjenissampah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbjenissampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbjenissampah.ForeColor = System.Drawing.Color.White;
+            this.cmbjenissampah.FormattingEnabled = true;
+            this.cmbjenissampah.Location = new System.Drawing.Point(571, 49);
+            this.cmbjenissampah.Name = "cmbjenissampah";
+            this.cmbjenissampah.Size = new System.Drawing.Size(264, 30);
+            this.cmbjenissampah.TabIndex = 23;
+            this.cmbjenissampah.SelectedIndexChanged += new System.EventHandler(this.cmbjenissampah_SelectedIndexChanged);
             // 
-            // comboBox2
+            // dateinputsampah
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(466, 49);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(146, 26);
-            this.comboBox2.TabIndex = 23;
+            this.dateinputsampah.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.dateinputsampah.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dateinputsampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.dateinputsampah.Location = new System.Drawing.Point(317, 267);
+            this.dateinputsampah.Name = "dateinputsampah";
+            this.dateinputsampah.Size = new System.Drawing.Size(518, 30);
+            this.dateinputsampah.TabIndex = 24;
+            this.dateinputsampah.ValueChanged += new System.EventHandler(this.dateinputsampah_ValueChanged);
             // 
-            // dateTimePicker1
+            // richtxtcatatansampah
             // 
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Location = new System.Drawing.Point(184, 106);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(376, 26);
-            this.dateTimePicker1.TabIndex = 24;
+            this.richtxtcatatansampah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.richtxtcatatansampah.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richtxtcatatansampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.richtxtcatatansampah.ForeColor = System.Drawing.Color.White;
+            this.richtxtcatatansampah.Location = new System.Drawing.Point(184, 212);
+            this.richtxtcatatansampah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richtxtcatatansampah.Name = "richtxtcatatansampah";
+            this.richtxtcatatansampah.Size = new System.Drawing.Size(682, 42);
+            this.richtxtcatatansampah.TabIndex = 74;
+            this.richtxtcatatansampah.Text = "";
+            this.richtxtcatatansampah.TextChanged += new System.EventHandler(this.richtxtcatatansampah_TextChanged);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Location = new System.Drawing.Point(184, 256);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(685, 4);
+            this.panel10.TabIndex = 73;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(184, 197);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 19);
+            this.label5.TabIndex = 72;
+            this.label5.Text = "Catatan";
+            // 
+            // txtnamasampah
+            // 
+            this.txtnamasampah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.txtnamasampah.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtnamasampah.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.txtnamasampah.ForeColor = System.Drawing.Color.White;
+            this.txtnamasampah.Location = new System.Drawing.Point(237, 59);
+            this.txtnamasampah.Name = "txtnamasampah";
+            this.txtnamasampah.Size = new System.Drawing.Size(265, 23);
+            this.txtnamasampah.TabIndex = 75;
+            this.txtnamasampah.TextChanged += new System.EventHandler(this.txtnamasampah_TextChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(238, 82);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(262, 4);
+            this.panel2.TabIndex = 76;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(240, 32);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 19);
+            this.label6.TabIndex = 77;
+            this.label6.Text = "Nama Sampah";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::AplikasiSampahJabar.Properties.Resources.icons8_trash_48;
+            this.pictureBox4.Location = new System.Drawing.Point(187, 27);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 59);
+            this.pictureBox4.TabIndex = 78;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(184, 272);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 19);
+            this.label7.TabIndex = 79;
+            this.label7.Text = "Tanggal Masuk";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(878, 694);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.txtnamasampah);
+            this.Controls.Add(this.richtxtcatatansampah);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dateinputsampah);
+            this.Controls.Add(this.cmbjenissampah);
+            this.Controls.Add(this.cmblokasitps);
+            this.Controls.Add(this.beratsampah);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.panel8);
@@ -402,7 +512,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beratsampah)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,11 +542,19 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lblPageInfo;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnkeluarmenuinput;
+        private System.Windows.Forms.NumericUpDown beratsampah;
+        private System.Windows.Forms.ComboBox cmblokasitps;
+        private System.Windows.Forms.ComboBox cmbjenissampah;
+        private System.Windows.Forms.DateTimePicker dateinputsampah;
+        private System.Windows.Forms.RichTextBox richtxtcatatansampah;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtnamasampah;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label7;
     }
 }
 

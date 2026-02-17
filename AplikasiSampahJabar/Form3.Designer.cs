@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnregistrasipetugas = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnregis = new System.Windows.Forms.Button();
-            this.btnregistrasi = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtKabupaten = new System.Windows.Forms.TextBox();
+            this.btnkembalihalamanlogin = new System.Windows.Forms.Button();
+            this.btnregistrasiuser = new System.Windows.Forms.Button();
+            this.labelregisterpass = new System.Windows.Forms.Label();
+            this.labellogo = new System.Windows.Forms.Label();
+            this.labelregistername = new System.Windows.Forms.Label();
+            this.txtregisterpass = new System.Windows.Forms.TextBox();
+            this.txtregistername = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -55,41 +55,42 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.Virus = new System.Windows.Forms.Button();
+            this.btnkehalamanloginadmin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnregistrasipetugas);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.btnregis);
-            this.panel1.Controls.Add(this.btnregistrasi);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.txtKabupaten);
+            this.panel1.Controls.Add(this.btnkembalihalamanlogin);
+            this.panel1.Controls.Add(this.btnregistrasiuser);
+            this.panel1.Controls.Add(this.labelregisterpass);
+            this.panel1.Controls.Add(this.labellogo);
+            this.panel1.Controls.Add(this.labelregistername);
+            this.panel1.Controls.Add(this.txtregisterpass);
+            this.panel1.Controls.Add(this.txtregistername);
             this.panel1.Location = new System.Drawing.Point(210, 106);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 521);
             this.panel1.TabIndex = 1;
             // 
-            // button1
+            // btnregistrasipetugas
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(106, 464);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Register Petugas";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnregistrasipetugas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnregistrasipetugas.FlatAppearance.BorderSize = 0;
+            this.btnregistrasipetugas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregistrasipetugas.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrasipetugas.ForeColor = System.Drawing.Color.White;
+            this.btnregistrasipetugas.Location = new System.Drawing.Point(106, 464);
+            this.btnregistrasipetugas.Name = "btnregistrasipetugas";
+            this.btnregistrasipetugas.Size = new System.Drawing.Size(207, 44);
+            this.btnregistrasipetugas.TabIndex = 23;
+            this.btnregistrasipetugas.Text = "Register Petugas";
+            this.btnregistrasipetugas.UseVisualStyleBackColor = false;
+            this.btnregistrasipetugas.Click += new System.EventHandler(this.btnregistrasipetugas_Click);
             // 
             // panel2
             // 
@@ -107,94 +108,98 @@
             this.panel8.Size = new System.Drawing.Size(335, 5);
             this.panel8.TabIndex = 19;
             // 
-            // btnregis
+            // btnkembalihalamanlogin
             // 
-            this.btnregis.BackColor = System.Drawing.Color.Transparent;
-            this.btnregis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnregis.FlatAppearance.BorderSize = 0;
-            this.btnregis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnregis.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregis.ForeColor = System.Drawing.Color.White;
-            this.btnregis.Location = new System.Drawing.Point(42, 364);
-            this.btnregis.Name = "btnregis";
-            this.btnregis.Size = new System.Drawing.Size(330, 44);
-            this.btnregis.TabIndex = 22;
-            this.btnregis.Text = "Sudah  Punya Akun Login disini.";
-            this.btnregis.UseVisualStyleBackColor = false;
+            this.btnkembalihalamanlogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnkembalihalamanlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnkembalihalamanlogin.FlatAppearance.BorderSize = 0;
+            this.btnkembalihalamanlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnkembalihalamanlogin.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnkembalihalamanlogin.ForeColor = System.Drawing.Color.White;
+            this.btnkembalihalamanlogin.Location = new System.Drawing.Point(42, 364);
+            this.btnkembalihalamanlogin.Name = "btnkembalihalamanlogin";
+            this.btnkembalihalamanlogin.Size = new System.Drawing.Size(330, 44);
+            this.btnkembalihalamanlogin.TabIndex = 22;
+            this.btnkembalihalamanlogin.Text = "Sudah  Punya Akun Login disini.";
+            this.btnkembalihalamanlogin.UseVisualStyleBackColor = false;
+            this.btnkembalihalamanlogin.Click += new System.EventHandler(this.btnkembalihalamanlogin_Click);
             // 
-            // btnregistrasi
+            // btnregistrasiuser
             // 
-            this.btnregistrasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnregistrasi.FlatAppearance.BorderSize = 0;
-            this.btnregistrasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnregistrasi.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregistrasi.ForeColor = System.Drawing.Color.White;
-            this.btnregistrasi.Location = new System.Drawing.Point(106, 414);
-            this.btnregistrasi.Name = "btnregistrasi";
-            this.btnregistrasi.Size = new System.Drawing.Size(175, 44);
-            this.btnregistrasi.TabIndex = 21;
-            this.btnregistrasi.Text = "Register User";
-            this.btnregistrasi.UseVisualStyleBackColor = false;
+            this.btnregistrasiuser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnregistrasiuser.FlatAppearance.BorderSize = 0;
+            this.btnregistrasiuser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregistrasiuser.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrasiuser.ForeColor = System.Drawing.Color.White;
+            this.btnregistrasiuser.Location = new System.Drawing.Point(106, 414);
+            this.btnregistrasiuser.Name = "btnregistrasiuser";
+            this.btnregistrasiuser.Size = new System.Drawing.Size(207, 44);
+            this.btnregistrasiuser.TabIndex = 21;
+            this.btnregistrasiuser.Text = "Register User";
+            this.btnregistrasiuser.UseVisualStyleBackColor = false;
+            this.btnregistrasiuser.Click += new System.EventHandler(this.btnregistrasiuser_Click);
             // 
-            // label1
+            // labelregisterpass
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 261);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 37);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Password";
+            this.labelregisterpass.AutoSize = true;
+            this.labelregisterpass.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelregisterpass.ForeColor = System.Drawing.Color.White;
+            this.labelregisterpass.Location = new System.Drawing.Point(35, 261);
+            this.labelregisterpass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelregisterpass.Name = "labelregisterpass";
+            this.labelregisterpass.Size = new System.Drawing.Size(170, 44);
+            this.labelregisterpass.TabIndex = 8;
+            this.labelregisterpass.Text = "Password";
             // 
-            // label4
+            // labellogo
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.ForestGreen;
-            this.label4.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(150, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 101);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "S";
+            this.labellogo.AutoSize = true;
+            this.labellogo.BackColor = System.Drawing.Color.ForestGreen;
+            this.labellogo.Font = new System.Drawing.Font("Harlow Solid Italic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labellogo.ForeColor = System.Drawing.Color.White;
+            this.labellogo.Location = new System.Drawing.Point(150, 11);
+            this.labellogo.Name = "labellogo";
+            this.labellogo.Size = new System.Drawing.Size(117, 121);
+            this.labellogo.TabIndex = 16;
+            this.labellogo.Text = "S";
             // 
-            // label2
+            // labelregistername
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 154);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 37);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Username";
+            this.labelregistername.AutoSize = true;
+            this.labelregistername.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelregistername.ForeColor = System.Drawing.Color.White;
+            this.labelregistername.Location = new System.Drawing.Point(35, 154);
+            this.labelregistername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelregistername.Name = "labelregistername";
+            this.labelregistername.Size = new System.Drawing.Size(178, 44);
+            this.labelregistername.TabIndex = 7;
+            this.labelregistername.Text = "Username";
             // 
-            // textBox1
+            // txtregisterpass
             // 
-            this.textBox1.BackColor = System.Drawing.Color.ForestGreen;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(42, 308);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 37);
-            this.textBox1.TabIndex = 6;
+            this.txtregisterpass.BackColor = System.Drawing.Color.ForestGreen;
+            this.txtregisterpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtregisterpass.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtregisterpass.ForeColor = System.Drawing.Color.White;
+            this.txtregisterpass.Location = new System.Drawing.Point(42, 308);
+            this.txtregisterpass.Margin = new System.Windows.Forms.Padding(2);
+            this.txtregisterpass.Name = "txtregisterpass";
+            this.txtregisterpass.Size = new System.Drawing.Size(330, 44);
+            this.txtregisterpass.TabIndex = 6;
+            this.txtregisterpass.TextChanged += new System.EventHandler(this.txtregisterpass_TextChanged);
             // 
-            // txtKabupaten
+            // txtregistername
             // 
-            this.txtKabupaten.BackColor = System.Drawing.Color.ForestGreen;
-            this.txtKabupaten.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKabupaten.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKabupaten.ForeColor = System.Drawing.Color.White;
-            this.txtKabupaten.Location = new System.Drawing.Point(42, 201);
-            this.txtKabupaten.Margin = new System.Windows.Forms.Padding(2);
-            this.txtKabupaten.Name = "txtKabupaten";
-            this.txtKabupaten.Size = new System.Drawing.Size(330, 37);
-            this.txtKabupaten.TabIndex = 5;
+            this.txtregistername.BackColor = System.Drawing.Color.ForestGreen;
+            this.txtregistername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtregistername.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtregistername.ForeColor = System.Drawing.Color.White;
+            this.txtregistername.Location = new System.Drawing.Point(42, 201);
+            this.txtregistername.Margin = new System.Windows.Forms.Padding(2);
+            this.txtregistername.Name = "txtregistername";
+            this.txtregistername.Size = new System.Drawing.Size(330, 44);
+            this.txtregistername.TabIndex = 5;
+            this.txtregistername.TextChanged += new System.EventHandler(this.txtregistername_TextChanged);
             // 
             // panel15
             // 
@@ -324,26 +329,27 @@
             this.panel6.Size = new System.Drawing.Size(200, 16);
             this.panel6.TabIndex = 25;
             // 
-            // Virus
+            // btnkehalamanloginadmin
             // 
-            this.Virus.FlatAppearance.BorderSize = 0;
-            this.Virus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Virus.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Virus.ForeColor = System.Drawing.Color.ForestGreen;
-            this.Virus.Location = new System.Drawing.Point(316, 639);
-            this.Virus.Name = "Virus";
-            this.Virus.Size = new System.Drawing.Size(191, 55);
-            this.Virus.TabIndex = 29;
-            this.Virus.Text = "StackSampah";
-            this.Virus.UseVisualStyleBackColor = true;
+            this.btnkehalamanloginadmin.FlatAppearance.BorderSize = 0;
+            this.btnkehalamanloginadmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnkehalamanloginadmin.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnkehalamanloginadmin.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btnkehalamanloginadmin.Location = new System.Drawing.Point(316, 639);
+            this.btnkehalamanloginadmin.Name = "btnkehalamanloginadmin";
+            this.btnkehalamanloginadmin.Size = new System.Drawing.Size(191, 55);
+            this.btnkehalamanloginadmin.TabIndex = 29;
+            this.btnkehalamanloginadmin.Text = "StackSampah";
+            this.btnkehalamanloginadmin.UseVisualStyleBackColor = true;
+            this.btnkehalamanloginadmin.Click += new System.EventHandler(this.btnkehalamanloginadmin_Click);
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(782, 694);
-            this.Controls.Add(this.Virus);
+            this.Controls.Add(this.btnkehalamanloginadmin);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel7);
@@ -375,13 +381,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btnregis;
-        private System.Windows.Forms.Button btnregistrasi;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtKabupaten;
+        private System.Windows.Forms.Button btnkembalihalamanlogin;
+        private System.Windows.Forms.Button btnregistrasiuser;
+        private System.Windows.Forms.Label labelregisterpass;
+        private System.Windows.Forms.Label labellogo;
+        private System.Windows.Forms.Label labelregistername;
+        private System.Windows.Forms.TextBox txtregisterpass;
+        private System.Windows.Forms.TextBox txtregistername;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
@@ -398,7 +404,7 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Virus;
+        private System.Windows.Forms.Button btnregistrasipetugas;
+        private System.Windows.Forms.Button btnkehalamanloginadmin;
     }
 }

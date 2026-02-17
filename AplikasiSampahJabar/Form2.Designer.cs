@@ -45,17 +45,17 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnloginpetugas = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnregis = new System.Windows.Forms.Button();
-            this.btnlogin = new System.Windows.Forms.Button();
+            this.btnloginuser = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtKabupaten = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Virus = new System.Windows.Forms.Button();
+            this.txtloginpass = new System.Windows.Forms.TextBox();
+            this.txtloginname = new System.Windows.Forms.TextBox();
+            this.btnkehalamanloginadmin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -190,20 +190,35 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnloginpetugas);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.btnregis);
-            this.panel1.Controls.Add(this.btnlogin);
+            this.panel1.Controls.Add(this.btnloginuser);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.txtKabupaten);
+            this.panel1.Controls.Add(this.txtloginpass);
+            this.panel1.Controls.Add(this.txtloginname);
             this.panel1.Location = new System.Drawing.Point(210, 100);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 450);
             this.panel1.TabIndex = 1;
+            // 
+            // btnloginpetugas
+            // 
+            this.btnloginpetugas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnloginpetugas.FlatAppearance.BorderSize = 0;
+            this.btnloginpetugas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnloginpetugas.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnloginpetugas.ForeColor = System.Drawing.Color.White;
+            this.btnloginpetugas.Location = new System.Drawing.Point(204, 390);
+            this.btnloginpetugas.Name = "btnloginpetugas";
+            this.btnloginpetugas.Size = new System.Drawing.Size(182, 41);
+            this.btnloginpetugas.TabIndex = 23;
+            this.btnloginpetugas.Text = "Login Petugas";
+            this.btnloginpetugas.UseVisualStyleBackColor = false;
+            this.btnloginpetugas.Click += new System.EventHandler(this.btnloginpetugas_Click);
             // 
             // panel2
             // 
@@ -235,20 +250,22 @@
             this.btnregis.TabIndex = 22;
             this.btnregis.Text = "Tidak  Punya Akun Registrasi disini.";
             this.btnregis.UseVisualStyleBackColor = false;
+            this.btnregis.Click += new System.EventHandler(this.btnregis_Click_1);
             // 
-            // btnlogin
+            // btnloginuser
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.btnlogin.FlatAppearance.BorderSize = 0;
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(42, 390);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(154, 41);
-            this.btnlogin.TabIndex = 21;
-            this.btnlogin.Text = "Login User";
-            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnloginuser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.btnloginuser.FlatAppearance.BorderSize = 0;
+            this.btnloginuser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnloginuser.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnloginuser.ForeColor = System.Drawing.Color.White;
+            this.btnloginuser.Location = new System.Drawing.Point(16, 390);
+            this.btnloginuser.Name = "btnloginuser";
+            this.btnloginuser.Size = new System.Drawing.Size(182, 41);
+            this.btnloginuser.TabIndex = 21;
+            this.btnloginuser.Text = "Login User";
+            this.btnloginuser.UseVisualStyleBackColor = false;
+            this.btnloginuser.Click += new System.EventHandler(this.btnloginuser_Click);
             // 
             // label1
             // 
@@ -258,7 +275,7 @@
             this.label1.Location = new System.Drawing.Point(35, 246);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 37);
+            this.label1.Size = new System.Drawing.Size(170, 44);
             this.label1.TabIndex = 8;
             this.label1.Text = "Password";
             // 
@@ -270,7 +287,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(150, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 101);
+            this.label4.Size = new System.Drawing.Size(117, 121);
             this.label4.TabIndex = 16;
             this.label4.Text = "S";
             // 
@@ -282,68 +299,57 @@
             this.label2.Location = new System.Drawing.Point(35, 145);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 37);
+            this.label2.Size = new System.Drawing.Size(178, 44);
             this.label2.TabIndex = 7;
             this.label2.Text = "Username";
             // 
-            // textBox1
+            // txtloginpass
             // 
-            this.textBox1.BackColor = System.Drawing.Color.ForestGreen;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(42, 290);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 37);
-            this.textBox1.TabIndex = 6;
+            this.txtloginpass.BackColor = System.Drawing.Color.ForestGreen;
+            this.txtloginpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtloginpass.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtloginpass.ForeColor = System.Drawing.Color.White;
+            this.txtloginpass.Location = new System.Drawing.Point(42, 290);
+            this.txtloginpass.Margin = new System.Windows.Forms.Padding(2);
+            this.txtloginpass.Name = "txtloginpass";
+            this.txtloginpass.Size = new System.Drawing.Size(330, 44);
+            this.txtloginpass.TabIndex = 6;
+            this.txtloginpass.TextChanged += new System.EventHandler(this.txtloginpass_TextChanged);
             // 
-            // txtKabupaten
+            // txtloginname
             // 
-            this.txtKabupaten.BackColor = System.Drawing.Color.ForestGreen;
-            this.txtKabupaten.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKabupaten.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKabupaten.ForeColor = System.Drawing.Color.White;
-            this.txtKabupaten.Location = new System.Drawing.Point(42, 189);
-            this.txtKabupaten.Margin = new System.Windows.Forms.Padding(2);
-            this.txtKabupaten.Name = "txtKabupaten";
-            this.txtKabupaten.Size = new System.Drawing.Size(330, 37);
-            this.txtKabupaten.TabIndex = 5;
+            this.txtloginname.BackColor = System.Drawing.Color.ForestGreen;
+            this.txtloginname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtloginname.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtloginname.ForeColor = System.Drawing.Color.White;
+            this.txtloginname.Location = new System.Drawing.Point(42, 189);
+            this.txtloginname.Margin = new System.Windows.Forms.Padding(2);
+            this.txtloginname.Name = "txtloginname";
+            this.txtloginname.Size = new System.Drawing.Size(330, 44);
+            this.txtloginname.TabIndex = 5;
+            this.txtloginname.TextChanged += new System.EventHandler(this.txtloginname_TextChanged);
             // 
-            // button1
+            // btnkehalamanloginadmin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(218, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 41);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Login Petugas";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // Virus
-            // 
-            this.Virus.FlatAppearance.BorderSize = 0;
-            this.Virus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Virus.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Virus.ForeColor = System.Drawing.Color.ForestGreen;
-            this.Virus.Location = new System.Drawing.Point(326, 597);
-            this.Virus.Name = "Virus";
-            this.Virus.Size = new System.Drawing.Size(191, 55);
-            this.Virus.TabIndex = 17;
-            this.Virus.Text = "StackSampah";
-            this.Virus.UseVisualStyleBackColor = true;
+            this.btnkehalamanloginadmin.FlatAppearance.BorderSize = 0;
+            this.btnkehalamanloginadmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnkehalamanloginadmin.Font = new System.Drawing.Font("Harlow Solid Italic", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnkehalamanloginadmin.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btnkehalamanloginadmin.Location = new System.Drawing.Point(326, 597);
+            this.btnkehalamanloginadmin.Name = "btnkehalamanloginadmin";
+            this.btnkehalamanloginadmin.Size = new System.Drawing.Size(191, 55);
+            this.btnkehalamanloginadmin.TabIndex = 17;
+            this.btnkehalamanloginadmin.Text = "StackSampah";
+            this.btnkehalamanloginadmin.UseVisualStyleBackColor = true;
+            this.btnkehalamanloginadmin.Click += new System.EventHandler(this.btnkehalamanloginadmin_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(782, 653);
-            this.Controls.Add(this.Virus);
+            this.Controls.Add(this.btnkehalamanloginadmin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
@@ -393,13 +399,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnregis;
-        private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.Button btnloginuser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtKabupaten;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Virus;
+        private System.Windows.Forms.TextBox txtloginpass;
+        private System.Windows.Forms.TextBox txtloginname;
+        private System.Windows.Forms.Button btnloginpetugas;
+        private System.Windows.Forms.Button btnkehalamanloginadmin;
     }
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Peta Sebaran Sampah</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .custom-popup .leaflet-popup-content-wrapper {
+            background: #2c3e50;
+            color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .custom-popup .leaflet-popup-tip {
+            background: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        // Use older JS syntax for IE compatibility
+        var map = L.map('map').setView([-6.9175, 107.6191], 12);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        var markers = [];
+
+        // Function called from C# via webBrowser.Document.InvokeScript
+        function loadData(jsonString) {
+            try {
+                // Clear existing markers
+                for (var i = 0; i < markers.length; i++) {
+                    map.removeLayer(markers[i]);
+                }
+                markers = [];
+
+                var data = JSON.parse(jsonString);
+
+                for (var j = 0; j < data.length; j++) {
+                    var item = data[j];
+                    var lat = item.Latitude;
+                    var lng = item.Longitude;
+                    var name = item.Nama;
+                    var count = item.Count;
+                    var status = item.Count > 0 ? "Menumpuk" : "Bersih";
+
+                    var marker = L.marker([lat, lng]).addTo(map);
+
+                    // Use string concatenation instead of template literals for IE
+                    var popupContent = "<b>" + name + "</b><br>" +
+                        "Status: " + status + "<br>" +
+                        "Sampah Pending: " + count;
+
+                    marker.bindPopup(popupContent, { className: 'custom-popup' });
+                    markers.push(marker);
+                }
+            } catch (e) {
+                // In IE11, console might not be available if DevTools is closed, but usually it is in Win10.
+                if (window.console) console.log("Error loading data: " + e.message);
+            }
+        }
+    </script>
+</body>
+
+</html>
